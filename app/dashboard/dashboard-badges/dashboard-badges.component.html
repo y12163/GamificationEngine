@@ -1,0 +1,30 @@
+<div class="header-badges">
+    <div class="header-tag">
+            <div class ="header-text">My Trophies</div>
+    </div>
+</div>
+    
+<hr class="divider">
+<div class="card-container-badges">
+   
+    
+        
+            <div *ngFor="let badge of user.badges">
+                    
+                    <div class="card-badge"  >
+                            <span class="text">{{badge.name}}</span>
+                           
+                            <img class="badge"
+                            width="80"
+                            height="80"
+                            alt= {{badge.name}}
+                            src= {{badge.image}}
+                            />
+                
+            
+                    </div>
+                    
+            
+            </div>
+      
+</div>

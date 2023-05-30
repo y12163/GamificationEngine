@@ -1,0 +1,11 @@
+.text-title {
+    color: #686b6b;
+    font-family: 'Lato';
+    font-size: 24px;
+  }
+
+.text-content {
+    color: #a7a8aa;
+    font-size: 14px;
+    font-family: 'Lato';
+}

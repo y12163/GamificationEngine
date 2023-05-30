@@ -1,0 +1,83 @@
+.card-canvas {
+    width: 400px;
+    height: 400px;
+    margin: 10px 50px 10px 50px;
+}
+
+.card-badge {
+    border: 1px solid #eee;
+    margin: 10px;
+    background-color: #fafafa;
+    height: 170px;
+    width: 150px;
+    padding: 16px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    line-height: 24px;
+}
+
+.card-report {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    margin: 10px;
+    background-color: #fafafa;
+    height: 180px;
+    width: 220px;
+    padding: 16px;
+    border-radius: 10px;
+    line-height: 24px;
+}
+.card-container-report{
+    height: 200px;
+    border-width: 0;
+    border-radius:5px;
+    border: 0px solid #eee;
+    padding: 16px;
+    justify-content: space-between;
+  }
+
+  .card-container-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .text-number {
+      font-family: Lato;
+
+      color: #686b6b;
+      font-size: 80px;
+    }
+  
+  .text-dataname {
+      font-family: Lato;
+
+      color: #a7a8aa;
+      font-size: 24px;
+  }
+
+  .text-comparison{
+    font-family: Lato;
+    width: 250px;
+    overflow: hidden;
+    white-space: pre;
+    color: #a7a8aa;
+    font-size: 16px;
+}
+.text-comparison.red {
+    font-family: Lato;
+
+    color: #e4002b;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text-comparison.green {
+    font-family: Lato;
+
+    color: #008000;
+    font-size: 16px;
+    font-weight: bold;
+}

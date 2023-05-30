@@ -1,0 +1,18 @@
+.text-title {
+    font-family: Lato;
+    font-weight: 600;
+      color: #686b6b;
+      font-size: 20px;
+    }
+  
+  .text-content {
+    font-family: Lato;
+      color: #a7a8aa;
+      font-size: 16px;
+      margin: 8px 0;
+  }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 16px;
+  }

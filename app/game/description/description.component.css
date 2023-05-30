@@ -1,0 +1,55 @@
+.text-title {
+    font-family: Lato;
+      color: #686b6b;
+      font-size: 28px;
+    }
+  
+  .text-content {
+    font-family: Lato;
+      color: #a7a8aa;
+      font-size: 16px;
+      margin: 8px 0;
+  }
+  .card-description {
+    height: 240px;
+    max-width:900px; 
+    border-width: 0;
+    border-radius:5px;
+    border: 0px solid #eee;
+    margin: 0 8px 16px;
+    padding: 16px;
+    text-align: left;
+  }
+  .card-container-description {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card-description.image {
+    border-width: 0;
+    height: 240px;
+    width: 240px;
+  }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 16px;
+  }
+  .svg-icon {
+    width:  24px;
+    height:  24px;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #686b6b;
+  }
+  
+  .svg-icon circle {
+    stroke: #ffffff;
+    stroke-width: 1;
+  }

@@ -1,0 +1,51 @@
+<div class="header-sub">
+    <div class="header-tag">
+            <div class ="header-text">New Releases</div>
+    </div>
+</div>
+<hr class="divider">
+<div class = "card-container-sub">
+    <div *ngFor="let game of newRelease">
+    
+        <div class="card card-game" >
+            <div class="parent">
+                <div *ngIf="(user0.name == game.creator)">
+                  
+                    <div class="corner"></div>
+                    <svg class="svg-icon-corner" viewBox="0 0 20 20">
+                            <path fill="#ffffff " d="M10,10.9c2.373,0,4.303-1.932,4.303-4.306c0-2.372-1.93-4.302-4.303-4.302S5.696,4.223,5.696,6.594C5.696,8.969,7.627,10.9,10,10.9z M10,3.331c1.801,0,3.266,1.463,3.266,3.263c0,1.802-1.465,3.267-3.266,3.267c-1.8,0-3.265-1.465-3.265-3.267C6.735,4.794,8.2,3.331,10,3.331z"></path>
+                            <path fill="#ffffff " d="M10,12.503c-4.418,0-7.878,2.058-7.878,4.685c0,0.288,0.231,0.52,0.52,0.52c0.287,0,0.519-0.231,0.519-0.52c0-1.976,3.132-3.646,6.84-3.646c3.707,0,6.838,1.671,6.838,3.646c0,0.288,0.234,0.52,0.521,0.52s0.52-0.231,0.52-0.52C17.879,14.561,14.418,12.503,10,12.503z"></path>
+                      </svg>
+                
+                </div>
+            <a [routerLink]="['/game', game.id]">
+      
+                <div *ngIf="game.image">
+                  <img class="center"
+                  width="80"
+                  src='{{game.image}}'/>
+                </div>
+                <ng-template #elseBlock>
+                    <img class="center"
+                    width="80"
+                    height="80"
+                    alt="{{game.name}}"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+                    />
+                  </ng-template>
+                
+                <div class="text-title">
+                  <div *ngIf="game.name">
+                    {{ game.name }}
+                  </div>
+                </div>
+            
+                <div class="text-content">
+                  <div *ngIf="game.app">
+                    App: {{ game.app }}
+                  </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>

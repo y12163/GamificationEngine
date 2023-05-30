@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  
+  
+  .mat-row:nth-child(2n+1){
+    background-color: #eee;
+  }
+  .mat-row:not(:nth-child(n+1)){
+    background-color:#ffffff;
+  }
+  

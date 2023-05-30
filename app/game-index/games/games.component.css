@@ -1,0 +1,52 @@
+.search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+  }
+
+.form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+}
+.form-control::placeholder  {
+    font-family: FontAwesome;
+}
+.text-title {
+    font-family: Lato;
+    font-weight: 600;
+      color: #686b6b;
+      font-size: 20px;
+    }
+  
+  .text-content {
+    font-family: Lato;
+      color: #a7a8aa;
+      font-size: 16px;
+      margin: 8px 0;
+  }
+    .card-container {
+      position: absolute;
+      margin-top:50px;
+      margin-left:0px;
+      margin-right: 200px;
+      justify-content: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .header-badges {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    border-width: 0;
+  }
+  .box-sameline {
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
+  }
+
+  .space {
+    margin: 10px;
+  }

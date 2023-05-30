@@ -1,0 +1,60 @@
+
+
+
+    <div class = "card-container-sub">
+        <div *ngFor="let user of users; let first = first">    
+                <div *ngIf = first>
+          <div class="row">
+            <div class="column">  
+            <div class="card card-game" >
+                
+              <div *ngIf="user.image">
+                <img class="center"
+                width="150"
+                height="140"
+                src='{{user.image}}'/>
+               </div>
+              
+              <div class="text-title">
+                <div *ngIf="user.name">
+                  {{ user.name }}
+                </div>
+              </div>
+            </div>
+            </div>
+
+                <div class="column">
+            <div class="card card-game" >
+
+              <div class="text-content">
+                <div *ngIf="user.rank">
+                  Rank: #{{ user.rank }}
+                  <img class="center"
+                  width="90"
+                  height="90"
+                  src='{{user.imagerank}}'/>  
+                              </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card card-game" >
+
+              <div class="text-content">
+                <div *ngIf="user.points">
+                  Points earned: {{ user.points }}
+                  <img class="center"
+                  width="90"
+                  height="90"
+                  src='{{user.imagepoints}}'/>  
+                              </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+  </div>
